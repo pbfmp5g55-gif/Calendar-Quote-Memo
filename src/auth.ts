@@ -9,7 +9,6 @@ import { LoginSchema } from "@/lib/schema"
 export const { auth, handlers, signIn, signOut } = NextAuth({
     adapter: PrismaAdapter(prisma),
     session: { strategy: "jwt" },
-    secret: "mytmmpsecretkey12345",
     ...authConfig,
     providers: [
         ...authConfig.providers,
