@@ -7,6 +7,11 @@ const outfit = Outfit({ subsets: ['latin'], variable: '--font-sans' });
 export const metadata: Metadata = {
   title: 'Calendar Quote Memo',
   description: 'Manage your days and find inspiration with daily quotes.',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'CalQuote',
+  },
 };
 
 export default function RootLayout({
